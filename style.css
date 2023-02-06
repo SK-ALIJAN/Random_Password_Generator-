@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&family=Open+Sans&family=Poppins:wght@300;400&family=Sofia+Sans:ital,wght@1,200&family=Ubuntu:ital@1&display=swap");
+
+body {
+  background-color: rgb(123, 32, 207);
+  position: relative;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+  --border: 5px;
+}
+main {
+  width: 25rem;
+  height: 15rem;
+  background-color: white;
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  border-radius: 2px;
+}
+header {
+  font-weight: 900;
+  font-size: large;
+  color: rgb(0, 0, 252);
+  margin-top: 30px;
+}
+#display {
+  border: 3px solid rgb(123, 32, 207);
+  width: 90%;
+  height: 3rem;
+  margin: auto;
+  border-radius: var(--border);
+  line-height: 50px;
+  color: rgb(123, 32, 207);
+  margin-top: 50px;
+}
+#display + div {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#wait {
+  display: flex;
+  margin-left: 20px;
+  display: none;
+}
+#password{
+text-align: left;
+margin-left: 10px;
+letter-spacing: 7px;
+font-size: 16px;
+font-weight: 600;
+}
+#first {
+  width: 1rem;
+  height: 1rem;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  align-self: center;
+  margin-left: 10px;
+  border-radius: 100%;
+  animation: round 0.7s infinite ease-in-out;
+}
+@keyframes round {
+  100% {
+    transform: rotate(306deg);
+  }
+}
+
+#generate,
+#copy {
+  padding: 5px 15px 5px 15px;
+  background-color: rgb(123, 32, 207);
+  border: 0;
+  color: white;
+  border-radius: var(--border);
+}
+.add {
+ transition: all 2s ease-in-out;
+}
